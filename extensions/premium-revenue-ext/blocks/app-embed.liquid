@@ -1,0 +1,22 @@
+<div id="root">
+  <script
+    src="{{ 'out.js' | asset_url }}"
+    defer="defer"
+    product={{ product.title }}></script>
+</div>
+
+
+{{ product.available }}
+
+
+
+<style></style>
+
+{% schema %}
+  {
+    "name": "JuicyApp",
+    "target": "body",
+    "settings": [],
+    "stylesheet": "out.css"
+  }
+{% endschema %}
