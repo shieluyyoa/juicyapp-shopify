@@ -10,8 +10,8 @@ const LauncherButton = ({ toggle, isOpen }) => {
         <button className={`launcherButton-inside`} onClick={toggle} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }} >
             <img style={{ display: 'inline-block', width: '20%' }} src={gift} />
             <div style={{ display: 'inline-block' }}>
-                <h2 style={{ color: '#FFC72C', fontSize: '18px', fontWeight: '700', lineHeight: '20px', letterSpacing: '0.075px', margin: '0' }}>Pepper Club</h2>
-                <div style={{ fontSize: '12px', fontWeight: '400', lineHeight: '15px', color: 'black', marginTop: '4px' }}>Get your reward now!
+                <div className='.required' style={{ color: '#FFC72C', fontSize: '18px', fontWeight: '700', lineHeight: '20px', letterSpacing: '0.075px', margin: '0' }}>Pepper Club</div>
+                <div className='.required' style={{ fontSize: '12px', fontWeight: '400', lineHeight: '15px', color: 'black', marginTop: '4px' }}>Get your reward now!
                 </div>
             </div>
             <img src={enter} />

@@ -15,9 +15,14 @@ const Cell = ({ status }) => {
 
     const Label = ({ label, expiryDate }) => {
         return (
-            <div style={{ marginRight: "2em" }}>
-                <h4 style={{ fontWeight: 600, fontSize: '14px', marginBottom: '0.25rem', marginTop: '0' }}>{label}</h4>
-                <div style={{ fontSize: '0.8rem', color: 'orange' }}>Expiry Date:{expiryDate}</div>
+            <div className="required" style={{ marginRight: "2em" }}>
+                <h4 className="required"
+                    style={{ fontWeight: 600, fontSize: '14px', marginBottom: '0.25rem', marginTop: '0' }}>
+                    {label
+                    }</h4>
+                <div className="required" style={{ fontSize: '14px', color: 'orange' }}>
+                    Expiry Date:{expiryDate}
+                </div>
             </div>
         )
     };
@@ -27,22 +32,25 @@ const Cell = ({ status }) => {
         <>
             {status == couponStatus.BUY_1_GET_1_FREE
                 &&
-                <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
+                <div className="required"
+                    style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
                     <img src={shoppingBag} />
+
                     <Label label="Buy 1 Get 1 Free" expiryDate={date.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' })} />
 
-
-                    <Button style={{
+                    <Button className="required" style={{
                         borderRadius: '10px', color: '#FAB800', height: '24px',
                         width: '70px', borderColor: '#FAB800', backgroundColor: 'white',
                         fontSize: '12px', lineHeight: '16px', fontWeight: '500', textAlign: 'center',
-                    }} variant="outlined" size='small'>50 pts</Button>
+                    }} variant="outlined" size='small'>
+                        50 pts
+                    </Button>
                 </div>
             }
 
             {status == couponStatus.DISCOUNT
                 &&
-                <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
+                <div className="required" style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
                     <img src={discountIcon} />
                     <Label label="Discount " expiryDate={date.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' })} />
 
@@ -52,11 +60,11 @@ const Cell = ({ status }) => {
 
             {status == couponStatus.SALE
                 &&
-                <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
+                <div className="required" style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
                     <img src={money} />
                     <Label label="Sale" expiryDate={date.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' })} />
 
-                    <Button style={{
+                    <Button className="required" style={{
                         borderRadius: '10px', color: '#FAB800', height: '24px',
                         width: '70px', borderColor: '#FAB800', backgroundColor: 'white',
                         fontSize: '12px', lineHeight: '16px', fontWeight: '500', textAlign: 'center',
@@ -66,11 +74,11 @@ const Cell = ({ status }) => {
 
             {status == couponStatus.SHIPPING
                 &&
-                <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
+                <div className="required" style={{ width: "100%", display: "flex", justifyContent: "space-evenly", margin: '30px 0px', alignItems: "center" }}>
                     <img src={deliveryBox} />
                     <Label label="FREE SHIPPING" expiryDate={date.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric' })} />
 
-                    <Button style={{
+                    <Button className="required" style={{
                         borderRadius: '10px', color: '#FAB800', height: '24px',
                         width: '70px', borderColor: '#FAB800', backgroundColor: 'white',
                         fontSize: '12px', lineHeight: '16px', fontWeight: '500', textAlign: 'center',

@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './style.css'
+import ReactShadowRoot from 'react-shadow-root'
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 console.log(document.currentScript.getAttribute('product'))
 root.render(
-
   <App />
 
 );

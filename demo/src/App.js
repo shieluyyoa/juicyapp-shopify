@@ -6,6 +6,9 @@ import Content from './components/Content'
 import { style } from '@mui/system';
 import cross from './asset/launcherbutton-open.svg'
 
+
+
+
 function App() {
 
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -41,6 +44,7 @@ function App() {
   }
 
   return (
+
     <div className='all'>
       <motion.div initial={false} className='content main-content' animate={isOpen ? 'open' : 'closed'} variants={contentVariant}>
         <Content />
@@ -48,11 +52,25 @@ function App() {
       <motion.div initial={false} className='launcherButton main-content' animate={isOpen ? 'open' : 'closed'} variants={sidebar}>
         <LauncherButton toggle={() => toggleOpen()} isOpen={isOpen} />
       </motion.div>
-      <button className='main-content' style={{ opacity: isOpen ? '1' : '0', position: 'absolute', top: '90%', width: '65px', height: '65px', borderRadius: '50%', borderWidth: '0px', boxShadow: '0px 4px 31px -1px rgba(0, 0, 0, 0.15)', background: '#FCFCFC', transition: 'opacity 0.2s ease-out' }} onClick={toggleOpen}><img src={cross} /></button>
+      <button className='main-content'
+        style={{
+          opacity: isOpen ? '1' : '0',
+          top: '90%',
+          width: '65px',
+          height: '65px',
+          borderRadius: '50%',
+          borderWidth: '0px',
+          boxShadow: '0px 4px 31px -1px rgba(0, 0, 0, 0.15)',
+          background: '#FCFCFC',
+          transition: 'opacity 0.2s ease-out'
+        }}
+        onClick={toggleOpen}>
+        <img src={cross} />
+      </button>
     </div >
-
 
   );
 }
 
 export default App;
+

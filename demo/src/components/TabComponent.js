@@ -9,32 +9,6 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import Cell from './Cell';
 import * as couponStatus from '../Status'
 
-const blue = {
-    50: '#F0F7FF',
-    100: '#C2E0FF',
-    200: '#80BFFF',
-    300: '#66B2FF',
-    400: '#3399FF',
-    500: '#007FFF',
-    600: '#0072E5',
-    700: '#0059B2',
-    800: '#004C99',
-    900: '#003A75',
-};
-
-const grey = {
-    50: '#f6f8fa',
-    100: '#eaeef2',
-    200: '#d0d7de',
-    300: '#afb8c1',
-    400: '#8c959f',
-    500: '#6e7781',
-    600: '#57606a',
-    700: '#424a53',
-    800: '#32383f',
-    900: '#24292f',
-};
-
 const Tab = styled(TabUnstyled)`
   color: #CFCFCF;
   cursor: pointer;
@@ -75,7 +49,7 @@ const TabPanel = styled(TabPanelUnstyled)`
 `;
 
 const TabsList = styled(TabsListUnstyled)(
-    ({ theme }) => `
+  ({ theme }) => `
   border-radius: 12px;
   margin-bottom: 16px;
   display: flex;
@@ -83,38 +57,47 @@ const TabsList = styled(TabsListUnstyled)(
   justify-content: center;
   align-content: space-between;
   box-shadow: 0px 10px 10px -5px rgba(230, 230, 230, 0.3);
-
   `,
 );
 
 export default function UnstyledTabsCustomized() {
-    const [mainTabVisible, setMainTabVisible] = useState(true)
+  const [mainTabVisible, setMainTabVisible] = useState(true)
 
-    return (
-        <TabsUnstyled defaultValue={0}>
-            <TabsList >
-                <Tab style={{ flexDirection: 'column', alignItems: 'center' }} onClick={() => setMainTabVisible(true)}>Discount Codes
-                    <div style={{ background: '#FFC72C', borderRadius: '31px', height: '4px', width: '131px', marginTop: '8px', visibility: mainTabVisible ? 'visible' : 'hidden' }}>
-                    </div>
-                </Tab>
-                <Tab style={{ flexDirection: 'column', alignItems: 'center' }} onClick={() => setMainTabVisible(false)}>
-                    Point History
-                    <div style={{ background: '#FFC72C', borderRadius: '31px', height: '4px', width: '131px', marginTop: '8px', visibility: mainTabVisible ? 'hidden' : 'visible' }}>
-                    </div>
-                    <div style={{ display: 'flex', position: 'absolute', width: '20px', height: '20px', backgroundColor: 'black', left: '330px', top: '230px', color: 'white', borderRadius: '50%', fontSize: '12px', fontWeight: '600', alignItems: 'center', justifyContent: 'center' }}>2</div>
-                </Tab>
-            </TabsList>
-            <TabPanel value={0} style={{ maxHeight: '300px', overflowY: 'scroll' }} >
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-                <Cell status={couponStatus.BUY_1_GET_1_FREE} />
-            </TabPanel>
-            <TabPanel value={1}><Cell status={couponStatus.BUY_1_GET_1_FREE} /></TabPanel>
-        </TabsUnstyled>
-    );
+  return (
+    <TabsUnstyled defaultValue={0} className="required">
+      <TabsList style={{ margin: '0' }}>
+        <Tab style={{ flexDirection: 'column', alignItems: 'center', fontSize: '16px' }} onClick={() => setMainTabVisible(true)}>
+          Discount Codes
+          <div style={{ display: 'block', background: '#FFC72C', borderRadius: '31px', height: '4px', width: '131px', marginTop: '8px', visibility: mainTabVisible ? 'visible' : 'hidden' }}>
+          </div>
+        </Tab>
+        <Tab style={{ flexDirection: 'column', alignItems: 'center', fontSize: '16px' }} onClick={() => setMainTabVisible(false)}>
+          Point History
+          <div style={{ display: 'block', background: '#FFC72C', borderRadius: '31px', height: '4px', width: '131px', marginTop: '8px', visibility: mainTabVisible ? 'hidden' : 'visible' }}>
+          </div>
+          <div style={{ display: 'flex', position: 'absolute', width: '20px', height: '20px', backgroundColor: 'black', left: '340px', top: '200px', color: 'white', borderRadius: '50%', fontSize: '12px', fontWeight: '600', alignItems: 'center', justifyContent: 'center' }}>2</div>
+        </Tab>
+      </TabsList>
+      <TabPanel value={0} style={{ maxHeight: '330px', overflowY: 'scroll' }} >
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+      </TabPanel>
+      <TabPanel value={1} style={{ maxHeight: '330px', overflowY: 'scroll' }}>
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+        <Cell status={couponStatus.BUY_1_GET_1_FREE} />
+      </TabPanel>
+    </TabsUnstyled>
+  );
 }

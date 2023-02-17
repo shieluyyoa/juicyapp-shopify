@@ -66,7 +66,7 @@ const Content = () => {
                     width: '317px', fontFamily: 'Montserrat',
                     display: mainPageVisible ? "block" : "none",
                 }}>
-                    <h2 style={{
+                    <h2 className='required' style={{
                         fontWeight: '700',
                         fontSize: '18px',
                         lineHeight: '20px',
@@ -75,7 +75,7 @@ const Content = () => {
                     }}>
                         Become a member
                     </h2>
-                    <p style={{
+                    <p className='required' style={{
                         fontWeight: '400',
                         fontSize: '12px',
                         lineHeight: '15px',
@@ -91,28 +91,38 @@ const Content = () => {
                     setNewPageVisible(true)
                 }}
                     variant='contained'
+                    className='required'
                     style={{
                         display: mainPageVisible ? "block" : "none",
                         marginBottom: '14px',
                         width: "70%",
                         textAlign: "center",
-                        backgroundColor: "#FFC72C"
+                        backgroundColor: "#FFC72C",
+                        fontSize: "16px",
+                        fontWeight: "600",
+                        lineHeight: "18px",
+                        letterSpacing: "0.075px"
                     }} >
                     register
                 </Button>
-                <Button href={`${domain}/account/login`} variant='contained' style={{
+                <Button className='required' href={`${domain}/account/login`} variant='contained' style={{
                     display: mainPageVisible ? "block" : "none",
                     width: "70%",
                     textAlign: "center",
                     color: "#FFC72C",
                     background: "white",
-                    border: "1px solid #FFC72C"
+                    border: "1px solid #FFC72C",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    lineHeight: "18px",
+                    letterSpacing: "0.075px"
+
                 }}>
                     Sign In
                 </Button>
 
                 <div style={{ width: '317px', marginTop: 'auto', marginBottom: '21px', display: mainPageVisible ? "block" : "none", }}>
-                    <h3 style={{
+                    <h3 className='required' style={{
                         fontWeight: 600,
                         fontSize: '16px',
                         lineHeight: '16px',
@@ -123,7 +133,7 @@ const Content = () => {
 
                     }}
                     >Enjoy exclusive rewards</h3>
-                    <div style={{ background: '#FFC72C', borderRadius: '31px', height: '4px', width: '198px', }}>
+                    <div style={{ display: 'block', background: '#FFC72C', borderRadius: '31px', height: '4px', width: '198px', }}>
                     </div>
 
                 </div>

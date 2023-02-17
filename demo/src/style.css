@@ -1,7 +1,19 @@
 
 button {
-  font-family: 'Montserrat' !important;
-  font-style: normal !important;
+  font-family: 'Montserrat';
+  font-style: normal ;
+}
+
+.required {
+  font-family: 'Montserrat';
+  font-style: normal ;
+}
+
+.expiry-date {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.075px;
 }
 
 .launcherButton-inside {
@@ -52,8 +64,8 @@ button {
     height: 610px;
     border-radius: 5%;
     background-color:  #FCFCFC;
-    font-family: 'Montserrat';
-    font-style: normal;
+    font-family: 'Montserrat' !important;
+    font-style: normal !important;
     
     
 
