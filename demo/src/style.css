@@ -59,7 +59,7 @@ button {
     position: fixed;
     box-shadow: 2px 4px 10px rgba(230, 230, 230, 0.3);
     border-radius: 20px;
-    top: 100px;
+    bottom: calc(100px);;
     width: 375px;
     height: 610px;
     border-radius: 5%;

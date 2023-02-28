@@ -46,27 +46,30 @@ function App() {
   return (
 
     <div className='all'>
-      <motion.div initial={false} className='content main-content' animate={isOpen ? 'open' : 'closed'} variants={contentVariant}>
-        <Content />
-      </motion.div>
-      <motion.div initial={false} className='launcherButton main-content' animate={isOpen ? 'open' : 'closed'} variants={sidebar}>
-        <LauncherButton toggle={() => toggleOpen()} isOpen={isOpen} />
-      </motion.div>
-      <button className='main-content'
-        style={{
-          opacity: isOpen ? '1' : '0',
-          top: '90%',
-          width: '65px',
-          height: '65px',
-          borderRadius: '50%',
-          borderWidth: '0px',
-          boxShadow: '0px 4px 31px -1px rgba(0, 0, 0, 0.15)',
-          background: '#FCFCFC',
-          transition: 'opacity 0.2s ease-out'
-        }}
-        onClick={toggleOpen}>
-        <img src={cross} />
-      </button>
+      <div className='all-container'>
+        <motion.div initial={false} className='content main-content' animate={isOpen ? 'open' : 'closed'} variants={contentVariant}>
+          <Content />
+        </motion.div>
+        <motion.div initial={false} className='launcherButton main-content' animate={isOpen ? 'open' : 'closed'} variants={sidebar}>
+          <LauncherButton toggle={() => toggleOpen()} isOpen={isOpen} />
+        </motion.div>
+        <button className='main-content'
+          style={{
+            position: 'fixed',
+            opacity: isOpen ? '1' : '0',
+            top: '90%',
+            width: '65px',
+            height: '65px',
+            borderRadius: '50%',
+            borderWidth: '0px',
+            boxShadow: '0px 4px 31px -1px rgba(0, 0, 0, 0.15)',
+            background: '#FCFCFC',
+            transition: 'opacity 0.2s ease-out'
+          }}
+          onClick={toggleOpen}>
+          <img src={cross} />
+        </button>
+      </div>
     </div >
 
   );

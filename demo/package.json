@@ -20,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "./node_modules/.bin/esbuild ./src/index.js  --bundle --loader:.js=jsx --outfile=out.js --loader:.svg=dataurl --loader:.png=dataurl --loader:.gif=dataurl",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "esbuild": "^0.16.17"
+    "esbuild": "^0.16.17",
+    "gh-pages": "^5.0.0"
   }
 }
