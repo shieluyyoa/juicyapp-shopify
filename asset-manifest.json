@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac9ee7f7.css",
-    "main.js": "/static/js/main.5311155d.js",
-    "static/media/412-gift-outline.gif": "/static/media/412-gift-outline.4da2a11576d39a917531.gif",
-    "static/media/image_1.png": "/static/media/image_1.329ae8e5bc81ced0daf1.png",
-    "static/media/discount.svg": "/static/media/discount.3169823edfd667bd98cb1af4595d4357.svg",
-    "static/media/delivery-box.svg": "/static/media/delivery-box.6d344acbb04d3e22fb9f8d97625726df.svg",
-    "static/media/shopping.svg": "/static/media/shopping.7028f518bee868e20faa7f0372f74633.svg",
-    "static/media/money.svg": "/static/media/money.02cd442d3d00eb75cddfc8deded7523b.svg",
-    "static/media/enter.svg": "/static/media/enter.58e0266416c8717bc6e60f1f2c21f3c5.svg",
-    "static/media/copy.svg": "/static/media/copy.d7ef760857d0755ac172474c8620241e.svg",
-    "index.html": "/index.html",
-    "static/media/launcherbutton-open.svg": "/static/media/launcherbutton-open.68c00ec126526191a06ef67462fcec55.svg",
-    "main.ac9ee7f7.css.map": "/static/css/main.ac9ee7f7.css.map",
-    "main.5311155d.js.map": "/static/js/main.5311155d.js.map"
+    "main.css": "/juicyapp-shopify/static/css/main.04855c66.css",
+    "main.js": "/juicyapp-shopify/static/js/main.d693eefd.js",
+    "static/media/412-gift-outline.gif": "/juicyapp-shopify/static/media/412-gift-outline.4da2a11576d39a917531.gif",
+    "static/media/image_1.png": "/juicyapp-shopify/static/media/image_1.329ae8e5bc81ced0daf1.png",
+    "static/media/discount.svg": "/juicyapp-shopify/static/media/discount.3169823edfd667bd98cb1af4595d4357.svg",
+    "static/media/delivery-box.svg": "/juicyapp-shopify/static/media/delivery-box.6d344acbb04d3e22fb9f8d97625726df.svg",
+    "static/media/shopping.svg": "/juicyapp-shopify/static/media/shopping.7028f518bee868e20faa7f0372f74633.svg",
+    "static/media/money.svg": "/juicyapp-shopify/static/media/money.02cd442d3d00eb75cddfc8deded7523b.svg",
+    "static/media/enter.svg": "/juicyapp-shopify/static/media/enter.58e0266416c8717bc6e60f1f2c21f3c5.svg",
+    "static/media/copy.svg": "/juicyapp-shopify/static/media/copy.d7ef760857d0755ac172474c8620241e.svg",
+    "index.html": "/juicyapp-shopify/index.html",
+    "static/media/launcherbutton-open.svg": "/juicyapp-shopify/static/media/launcherbutton-open.68c00ec126526191a06ef67462fcec55.svg",
+    "main.04855c66.css.map": "/juicyapp-shopify/static/css/main.04855c66.css.map",
+    "main.d693eefd.js.map": "/juicyapp-shopify/static/js/main.d693eefd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac9ee7f7.css",
-    "static/js/main.5311155d.js"
+    "static/css/main.04855c66.css",
+    "static/js/main.d693eefd.js"
   ]
 }
